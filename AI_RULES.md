@@ -2,8 +2,8 @@
 
 ## Tech Stack
 
-This is an Angular 17 application using:
-- **Framework**: Angular 17 (standalone components)
+This is an Angular 20 application using:
+- **Framework**: Angular 20 (standalone components)
 - **Language**: TypeScript
 - **Styling**: CSS
 - **Build Tool**: Angular CLI with Webpack
@@ -36,7 +36,6 @@ The application follows Angular's component-based architecture:
 ```typescript
 @Component({
   selector: 'app-component-name',
-  standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './component-name.component.html',
   styleUrl: './component-name.component.css'
