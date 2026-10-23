@@ -14,7 +14,7 @@ This template provides a minimal, unopinionated Angular application setup that's
 
 ## Development
 
-Angular 20 needs Node.js 20.19 or a later 20.x, 22.12 or a later 22.x, or 24 or later.
+Angular 20 needs Node.js 20.19 or a later 20.x, 22.12 or a later 22.x, or 24.0 or a later 24.x.
 
 To start the development server:
 
