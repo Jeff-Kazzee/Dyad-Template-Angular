@@ -6,13 +6,15 @@ A minimal Angular template for Dyad.sh - a clean starting point for building Ang
 
 This template provides a minimal, unopinionated Angular application setup that's fully compatible with Dyad.sh's JavaScript-based environment. It includes:
 
-- Latest stable Angular (v17)
+- Angular 20
 - TypeScript support
 - CSS styling
 - Development server with hot reload
 - Production build configuration
 
 ## Development
+
+Angular 20 needs Node.js 20.19 or a later 20.x, 22.12 or a later 22.x, or 24.0 or a later 24.x.
 
 To start the development server:
 
@@ -56,7 +58,7 @@ src/
 
 ## Technologies
 
-- Angular 17
+- Angular 20
 - TypeScript
 - CSS
 

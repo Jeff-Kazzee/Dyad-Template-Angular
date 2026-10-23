@@ -11,40 +11,47 @@
     "lint": "ng lint"
   },
   "private": true,
+  "engines": {
+    "node": "^20.19.0 || ^22.12.0 || ^24.0.0"
+  },
   "dependencies": {
-    "@angular/animations": "^17.3.0",
-    "@angular/common": "^17.3.0",
-    "@angular/compiler": "^17.3.0",
-    "@angular/core": "^17.3.0",
-    "@angular/forms": "^17.3.0",
-    "@angular/platform-browser": "^17.3.0",
-    "@angular/platform-browser-dynamic": "^17.3.0",
-    "@angular/router": "^17.3.0",
+    "@angular/common": "^20.3.34",
+    "@angular/compiler": "^20.3.34",
+    "@angular/core": "^20.3.34",
+    "@angular/forms": "^20.3.34",
+    "@angular/platform-browser": "^20.3.34",
+    "@angular/router": "^20.3.34",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.14.3"
+    "zone.js": "~0.15.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^17.3.17",
-    "@angular/cli": "^17.3.17",
-    "@angular/compiler-cli": "^17.3.0",
-    "@angular-builders/custom-webpack": "^17.0.0",
-    "@angular-eslint/builder": "^17.0.0",
-    "@angular-eslint/eslint-plugin": "^17.0.0",
-    "@angular-eslint/eslint-plugin-template": "^17.0.0",
-    "@angular-eslint/schematics": "^17.0.0",
-    "@angular-eslint/template-parser": "^17.0.0",
-    "@typescript-eslint/eslint-plugin": "^6.13.0",
-    "@typescript-eslint/parser": "^6.13.0",
-    "eslint": "^8.54.0",
+    "@angular-builders/custom-webpack": "^20.0.0",
+    "@angular-devkit/build-angular": "^20.3.41",
+    "@angular-eslint/builder": "^20.7.0",
+    "@angular-eslint/eslint-plugin": "^20.7.0",
+    "@angular-eslint/eslint-plugin-template": "^20.7.0",
+    "@angular-eslint/schematics": "^20.7.0",
+    "@angular-eslint/template-parser": "^20.7.0",
+    "@angular/cli": "^20.3.41",
+    "@angular/compiler-cli": "^20.3.34",
     "@types/jasmine": "~5.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.71.2",
+    "@typescript-eslint/parser": "^8.71.2",
+    "eslint": "^8.54.0",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.4.2",
+    "typescript": "~5.8.3",
     "webpack": "^5.90.0"
+  },
+  "overrides": {
+    "webpack-dev-middleware": "7.4.6",
+    "sockjs": {
+      "uuid": "11.1.1"
+    }
   }
 }

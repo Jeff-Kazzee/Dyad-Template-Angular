@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-hello',
-  standalone: true,
   template: `
     <div class="hello">
       <h2>Hello Component</h2>
