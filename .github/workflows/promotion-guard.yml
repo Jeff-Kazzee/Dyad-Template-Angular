@@ -1,0 +1,22 @@
+# Draft for .github/workflows/promotion-guard.yml, landed by PR into each repo's dev.
+# Fails any PR into prod whose head is not this repo's dev branch.
+# main stays in the list until the repo renames main to prod. A cleanup PR then drops it.
+name: promotion-guard
+on:
+  pull_request:
+    branches: [prod, main]
+    types: [opened, reopened, synchronize, edited]
+permissions: {}
+jobs:
+  promotion-source:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Only dev from this repo may merge into prod
+        env:
+          HEAD_REF: ${{ github.head_ref }}
+          HEAD_REPO: ${{ github.event.pull_request.head.repo.full_name }}
+        run: |
+          if [ "$HEAD_REF" != "dev" ] || [ "$HEAD_REPO" != "$GITHUB_REPOSITORY" ]; then
+            echo "::error::PRs into prod must come from dev in $GITHUB_REPOSITORY. Got $HEAD_REPO:$HEAD_REF"
+            exit 1
+          fi
